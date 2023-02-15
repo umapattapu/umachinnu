@@ -13,5 +13,9 @@ phases:
     commands:
     - echo Build completed on `date`
     - mvn package
-    - mv target/Dockerdemo.war Dockerdemo.war
-#artifacts:
+    - mv target/mystore.war mystore.war
+artifacts:
+  files:
+  - mystore.war
+  - .ebextensions/**/*
+
